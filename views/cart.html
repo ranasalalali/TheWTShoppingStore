@@ -1,0 +1,12 @@
+% rebase('base.html')
+
+<h1>{{title}}</h1>
+<div class="productlist">
+    %for product in products:
+    <div class="product">
+        <h2>Product: {{product['id']}} {{product['name']}}</h2>
+        <div class="inventory">Quantity: {{product['quantity']}}</div>
+        <div class="cost">Cost: ${{product['cost']}}</div>
+    </div>
+    %end
+</div>

@@ -1,0 +1,357 @@
+html {
+    font-family: 'bebas kai';
+    background-color: white;
+}
+
+body{
+    margin:0px;
+}
+
+header{
+    background:black;
+    color:white;
+}
+
+header h1{
+    text-align:center;
+    margin:0;
+    font-size:60px;
+    padding:0;
+}
+
+nav ul.menu{
+    list-style:none;
+    text-align:center;
+    margin-top:10px;
+    padding:0;
+    width:100%;
+}
+
+nav ul.menu li{
+    border-bottom:1px solid #ffffff;
+    height:30px;
+    margin:10px 0px;
+}
+
+nav ul.menu li a{
+    text-decoration:none;
+    color:white;
+}
+
+@media screen and (min-width:700px){
+    nav ul.menu{
+        list-style:none;
+        text-align:center;
+        margin-top:10px;
+        padding:0;
+    }
+
+    nav ul.menu li{
+        display:inline-block;
+        width:15%;
+        height:30px;
+        border-right: 1px solid #ffffff;
+        border-bottom:none;
+        margin:auto;
+    }
+
+    nav ul.menu li:last-child{
+        border-right: none;
+    }
+
+    nav ul.menu li a{
+        text-decoration:none;
+        color:white;
+        font-size:22px;
+        display:block;
+    }
+}
+
+
+
+nav ul.account-menu{
+    width:auto;
+    padding:0px;
+    text-align:center;
+    margin:0px;
+}
+nav ul.account-menu li{
+    display:inline-block;
+    height:30px;
+    width:20%;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-right:1px solid #ffffff;
+}
+nav ul.account-menu li:last-child{
+    border-right:none;
+}
+
+nav ul.account-menu li a{
+    text-decoration:none;
+    color:white;
+    font-size:20px;
+    display:block;
+}
+nav ul li a:hover{
+    color:grey;
+    transition:0.3s color;
+}
+
+ul li a:hover{
+    color:grey;
+    transition:0.3s color;
+}
+
+nav form.product-search-form {
+    display:inline-block;
+}
+nav form input{
+    width: 40%;
+    padding: 10px 0px;
+    text-align:center;
+    margin: 10px 0px 10px 30%;
+    border-bottom: 1px solid #ffffff;
+    background:black;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    font-size:15px;
+    font-family:'bebas kai';
+}
+
+nav form input::placeholder{
+    color:#DCDCDC;
+}
+
+nav form input:focus {
+    background-color: black;
+    color:white;
+}
+
+nav form button{
+    color: white;
+    font-size:15px;
+    height:35px;
+    width:35px;
+    font-family:'bebas-kai';
+    background: black;
+    border-radius: 20px;
+    border-color: white;
+}
+
+form button:hover{
+    background:white;
+    color:black;
+    border-color:white;
+    transition: 0.3s;
+}
+
+
+
+header div ul{
+    list-style:none;
+    text-align:center;
+    margin-top:0px;
+    padding:0;
+}
+
+header div ul li{
+    display:inline-block;
+    margin:10px 0px;
+    width:20%;
+    height:30px;
+    border-right: 1px solid #ffffff;
+}
+header div ul li:last-child{
+    border-right:none;
+}
+
+header div ul li a{
+    text-decoration:none;
+    color:white;
+    font-size:15px;
+}
+
+div.content{
+    text-align:center;
+    border-top: 1px solid #000000;
+    margin-top:-15px
+}
+
+div.featured{
+    display:center;
+}
+
+div.featured div.image{
+    width:100%;
+    margin-bottom:10px;
+}
+
+div.featured img{
+    max-height:100%;
+    max-width:100%;
+    border:10px solid #000000;
+    border-radius:50%;
+}
+
+div.featured h2{
+    font-size:40px;
+    margin:20px;
+}
+div.featured div.inventory{
+    font-size:30px;
+}
+
+div.featured div.cost{
+    font-size:40px;
+}
+
+div input[name='quantity']{
+    width:50px;
+    text-align:center;
+    padding: 10px 0px;
+    text-align:center;
+    border-bottom: 1px solid #000000;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    font-size:15px;
+    font-family:'bebas kai';
+}
+div input[type='submit']{
+    width:100px;
+    background:black;
+    color:white;
+    text-align:center;
+    padding: 10px 0px;
+    text-align:center;
+    border:none;
+    font-size:15px;
+    font-family:'bebas kai';
+}
+
+div input[type='submit']:hover{
+    background:white;
+    color:black;
+    border-bottom:1px solid #000000;
+    transition:0.4s;
+}
+
+div#special-offer{
+    border-top: 1px solid #000000;
+    margin:20px 0px;
+    font-size:40px;
+    background:black;
+    color:white;
+    padding-bottom:10px;
+}
+
+div.productlist{
+    background:black;
+    width:100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+div.productlist h2{
+    font-size:25px;
+    margin-top:0px;
+}
+
+div.productlist h2 a{
+    text-decoration:none;
+    color:black;
+}
+
+div.productlist div.inventory{
+    font-size:25px;
+}
+div.productlist div.cost{
+    font-size:30px;
+}
+
+div.productlist div.product{
+    background:white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+div.productlist img{
+    max-width:100%;
+    max-height:100%;
+}
+
+div#promotional-text{
+    display:inline-block;
+    text-align:center;
+    border-bottom:1px solid #000000;
+}
+
+footer{
+    text-align:center;
+}
+
+footer form {
+    display:center;
+}
+footer form input{
+    width: 20%;
+    padding: 10px 0px;
+    text-align:center;
+    border-bottom: 1px solid #000000;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    font-size:15px;
+    font-family:'bebas kai';
+}
+
+footer form input::placeholder{
+    color:#DCDCDC;
+}
+
+footer form button{
+    color: white;
+    font-size:15px;
+    height:35px;
+    width:35px;
+    font-family:'bebas-kai';
+    background: black;
+    border-radius: 20px;
+    border-color: black;
+}
+
+footer div ul{
+    list-style:none;
+    text-align:center;
+    padding:0;
+}
+
+footer div ul li{
+    display:inline-block;
+    height:30px;
+    width:10%;
+    border-right: 1px solid #000000;
+}
+footer div ul li:last-child{
+    border-right:none;
+}
+
+footer div ul li a{
+    text-decoration:none;
+    color:black;
+    font-size:15px;
+}
+
+div.content a{
+    color:grey;
+}
+
+div.content h1{
+    background:white;
+    color:black;
+    margin-bottom:5px;
+}
